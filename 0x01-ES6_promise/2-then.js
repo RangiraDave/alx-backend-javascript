@@ -1,6 +1,6 @@
-// eslint-disable space-before-function-paren
+// Script to use then, catch ans finally.
 export default function handleResponseFromAPI(promise) {
-  promise
+  return promise
     .then(() => (
       { status: 200, body: 'success' }
     ))
