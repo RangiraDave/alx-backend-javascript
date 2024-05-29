@@ -1,9 +1,10 @@
+// eslint-disable space-before-function-paren
 export default function getFullResponseFromAPI(success) {
   const promise = new Promise((resolve, reject) => {
     if (success) {
-      return resolve({ 'status': 200, 'body': 'Success' });
+      resolve({ status: 200, body: 'Success' });
     } else {
-      return reject("The fake API is not working currently");
+      reject(new error("The fake API is not working currently", ));
     }
   });
 
