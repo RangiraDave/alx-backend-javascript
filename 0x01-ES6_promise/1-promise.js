@@ -7,5 +7,5 @@ export default function getFullResponseFromAPI(success) {
     }
   });
 
-  //return promise;
+  return promise;
 }
