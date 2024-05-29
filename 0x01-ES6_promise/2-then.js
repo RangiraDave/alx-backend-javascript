@@ -1,3 +1,4 @@
+// eslint-disable space-before-function-paren
 export default function handleResponseFromAPI(promise) {
   promise
     .then(() => {
