@@ -1,4 +1,4 @@
-export default function guadail(mathFunction) {
+export default function guadrail(mathFunction) {
   let queue = [];
   try {
     queue.push(mathFunction());
