@@ -6,4 +6,6 @@ import default function getFullResponseFromAPI(success) {
       reject("The fake API is not working currently");
     }
   });
+
+  return promise;
 }
