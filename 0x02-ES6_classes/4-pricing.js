@@ -1,6 +1,6 @@
 // Implementing class Pricing that inherits from Currency.
 
-import Currency from './currency.j';
+import Currency from './currency.js';
 
 export default class Pricing extends Currency {
   constructor(amount, currency) {
