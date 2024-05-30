@@ -1,5 +1,5 @@
 export default function guadrail(mathFunction) {
-  let queue = [];
+  const queue = [];
   try {
     queue.push(mathFunction());
   } catch (error) {
