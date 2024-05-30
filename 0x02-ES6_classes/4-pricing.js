@@ -9,6 +9,7 @@ export default class Pricing extends Currency {
     }
 
     if (!(currency instanceof Currency)) {
+      throw new TypeError('Currency must be a Currency');
     }
 
    this._amount = amount;
