@@ -8,8 +8,7 @@ export default class Pricing extends Currency {
       throw new TypeError('Amount must be a number');
     }
 
-    if (typeof currency !== 'string') {
-      throw new TypeError('Currency must be a string');
+    if (!(currency instanceof Currency)) {
     }
 
    this._amount = amount;
@@ -32,14 +31,14 @@ export default class Pricing extends Currency {
   }
 
   set currency(currency) {
-    if (typeof currency !== 'string') {
-      throw new TypeError('Currency must be a string');
+    if (!(currency instanceof Currency)) {
+      throw new TypeError('Currency must be a Currency');
     }
     this._currency = currency;
   }
 
   displayFullPrice() {
-    return `${this._amount} ${Currency._name} (${Currency._code})`;
+    return `${this._amount} ${this._currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {
