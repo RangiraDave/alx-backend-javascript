@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 // Implementing class Pricing that inherits from Currency.
 
 import Currency from './3-currency';
