@@ -13,7 +13,7 @@ export default class Pricing {
   }
 
   set amount(amount) {
-    if (typeof amount === 'number') {
+    if (typeof (amount) === 'number') {
       this._amount = amount;
     }
   }
