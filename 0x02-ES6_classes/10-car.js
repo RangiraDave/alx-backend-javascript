@@ -1,4 +1,4 @@
-// Implementing calss Car with cloneCar method that returns a new object of class
+// Implementing class Car with cloneCar method that returns a new object of class
 
 export default class Car {
   constructor(brand, motor, color) {
