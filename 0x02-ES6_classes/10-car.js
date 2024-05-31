@@ -24,11 +24,11 @@ export default class Car {
   }
 
   cloneCar() {
-    const clone = Object.create(Object.getPrototypeOf(this));
-    clone[brandSymbol] = this[brandSymbol];
-    clone[motorSymbol] = this[motorSymbol];
-    clone[colorSymbol] = this[colorSymbol];
-
+    const Species = this.constructor[Symbol.species] || this.constructor;
+    const clone = new Species(this[brandSymbol], this[motorSymbol], this[colorSymbol]);
     return clone;
+  }
+  static get [Symbol.species]() {
+    return this;
   }
 }
