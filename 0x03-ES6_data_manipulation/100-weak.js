@@ -1,7 +1,7 @@
 export const weakMap = new WeakMap();
 
 export default function queryAPI(endpoint) {
-  // Increment the number of queries to the passed endpoint    
+  // Increment the number of queries to the passed endpoint
   if (!weakMap.has(endpoint)) {
     weakMap.set(endpoint, 1);
   } else {

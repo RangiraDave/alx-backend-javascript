@@ -4,7 +4,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     .map((student) => {
       const grade = newGrades.filter((newGrade) => newGrade.studentId === student.id);
       const newGrade = grade.length > 0 ? grade[0].grade : 'N/A';
-
-      return { ...student, grade: newGrade }; // used spread operator to copy the student object and add the new grade
+      // used spread operator to copy the student object and add the new grade
+      return { ...student, grade: newGrade };
     });
 }
